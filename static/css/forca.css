@@ -1,0 +1,183 @@
+body{
+    background: linear-gradient(to bottom, rgb(5, 34, 87), rgb(4, 90, 61), rgba(133, 184, 52, 0.767) );
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 90%;
+    width: 45%;
+    margin: 20px auto;
+    box-sizing: border-box;
+
+    .imagem-percy{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.text-center{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(230, 195, 0);
+}
+
+#dica {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+#palavra {
+    color: #343a40;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+#guess {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    flex: 1 1 150px;
+    max-width: 200px;
+}
+
+.btn-primary{
+    background-color: rgb(230, 195, 0);
+    color:white;
+}
+
+.btn-primary:hover{
+    background-color: #0056b3;
+}
+
+.btn-secondary{
+    background-color: rgb(230, 195, 0);
+    color: white;
+}
+
+.btn-secondary:hover{
+    background-color: #5a6268;
+}
+
+#status,
+#attempts{
+    font-size: 1.1em;
+    color: #495057;
+    margin-top: 20px;
+}
+
+#forca{
+    width: 150px;
+    height: 250px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#forca div{
+    background-color: blue;
+    position: absolute;
+}
+
+footer{
+    background-color: rgb(5, 57, 66);
+    padding: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    margin-top: auto;
+    line-height: 1.6;
+    width: 100%;
+    color:rgb(255, 251, 0);
+}
+
+header{
+    background-color: rgb(5, 57, 66);
+    color:#fff;
+    padding: 15px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display-4{
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 90%;
+        padding: 15px;
+    }
+
+    .btn {
+        flex: 1 1 100%;
+        max-width: none;
+        margin-bottom: 10px;
+    }
+
+    #forca {
+        width: 120px;
+        height: 200px;
+    }
+
+    footer,
+    header {
+        padding: 10px 0;
+        font-size: 16px;
+    }
+
+    .display-4{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px){
+    .container{
+        width: 95%;
+        padding: 10px;
+    }
+
+    #forca{
+        width: 100px;
+        height: 180px;
+    }
+
+    .btn{
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    footer,
+    header {
+        font-size: 14px;
+    }
+
+    .display-4{
+        font-size: 1.5rem;
+    }
+}
